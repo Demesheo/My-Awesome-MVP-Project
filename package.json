@@ -1,0 +1,23 @@
+{
+  "name": "my-awesome-mvp-project",
+  "version": "1.0.0",
+  "description": "my first mvp project",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Demesheo/My-Awesome-MVP-Project.git"
+  },
+  "author": "Demesheo Wilson",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Demesheo/My-Awesome-MVP-Project/issues"
+  },
+  "homepage": "https://github.com/Demesheo/My-Awesome-MVP-Project#readme",
+  "dependencies": {
+    "gmaps": "^0.4.18",
+    "moment": "^2.10.6"
+  }
+}
