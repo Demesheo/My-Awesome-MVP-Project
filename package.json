@@ -18,6 +18,8 @@
   "homepage": "https://github.com/Demesheo/My-Awesome-MVP-Project#readme",
   "dependencies": {
     "gmaps": "^0.4.18",
+    "http-server": "^0.8.0",
+    "jquery": "^2.1.4",
     "moment": "^2.10.6"
   }
 }
