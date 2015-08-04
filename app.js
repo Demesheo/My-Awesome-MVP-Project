@@ -4,7 +4,7 @@ $(document).ready(function(){
       div: '#map',
       lat: 37.877, 
       lng: -122.27,
-      zoom: 18,
+      zoom: 17,
       width: '960px',
       height: '500px'
   });
@@ -19,12 +19,14 @@ $(document).ready(function(){
 
  for(var i = 0; i < pastPosts.length; i++){
   map.addMarker(pastPosts[i]);
+  $("#postarea").append("<div>"+pastPosts[i].infoWindow.content+"Sent from: ("+pastPosts[i].lat+", "+pastPosts[i].lng+")"+"</div>");
  };
 };
 };
 //When we submit our text box, we want to run geolocate and post our location and message to the local storage
 //Then we will perform a GET request to repopulate our map with the new post
 //Use Gmaps geolocate function to show our current location
+setTimeout( 
  GMaps.geolocate({
     success: function(position){
       map.setCenter(position.coords.latitude, position.coords.longitude);
@@ -36,7 +38,7 @@ $(document).ready(function(){
     not_supported: function(){
       alert("Your browser does not support geolocation");
     }
-  });
+  }), 500);
 //End of map functions
 //Begin user post function
     $("button").click(function(){
