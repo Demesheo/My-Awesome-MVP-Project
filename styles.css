@@ -1,14 +1,2 @@
-#mapcontainer {
-    margin: auto;
-    width: 80%;
-    border:3px solid white;
-    padding: 10px;
-},
-
-#message {
-	margin: auto;
-    width: 80%;
-    border: 1px solid black;
-    padding: 10px;
-}
-
+body { width: 960px; margin: 0 auto; }
+h1 { font-style: italic; }
