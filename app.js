@@ -9,6 +9,17 @@ $(document).ready(function(){
       height: '500px'
   });
 
+map.setContextMenu({
+  control: 'map',
+  options: [{
+    title: 'Show Location',
+    name: 'show_location',
+    action: function(e) {
+      alert(""+e.latLng.lat()+", "+e.latLng.lng()+"");
+    }
+  }]
+});
+
  var pastPosts;
  var allPosts = [];
 
