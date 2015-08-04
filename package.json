@@ -17,9 +17,12 @@
   },
   "homepage": "https://github.com/Demesheo/My-Awesome-MVP-Project#readme",
   "dependencies": {
+    "express": "^4.13.3",
     "gmaps": "^0.4.18",
     "http-server": "^0.8.0",
     "jquery": "^2.1.4",
-    "moment": "^2.10.6"
+    "moment": "^2.10.6",
+    "mongodb": "^2.0.39",
+    "node": "0.0.0"
   }
 }
